@@ -28,7 +28,7 @@ public class Task{
     @Column(name = "menager")
     private User menager;
 
-    @NotNull
+    @OneToMany(mappedBy = "user")
     @Column
     private List<User> group;
 

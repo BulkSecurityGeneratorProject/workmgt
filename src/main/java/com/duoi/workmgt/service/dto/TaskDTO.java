@@ -38,7 +38,7 @@ public class TaskDTO {
         this.name = task.getName();
         this.menager = task.getMenager().toString();
         this.group = task.getGroup().stream()
-            .map(u -> (u.getLogin() + " " + u.getFirstName() + " " + u.getLastName()))
+            .map(u -> (u.getFirstName() + " " + u.getLastName()))
             .collect(Collectors.toList());
         this.beginningOfTask = beginningOfTask;
         this.endOfTask = endOfTask;
